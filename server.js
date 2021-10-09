@@ -26,4 +26,4 @@ app.get('/socket', { websocket: true }, connection => {
   connection.on('close', () => connections.delete(connection));
 });
 
-app.listen(3000 || process.env.PORT).then(console.log);
+app.listen(process.env.PORT || 3000).then(console.log);
