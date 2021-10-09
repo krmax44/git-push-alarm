@@ -4,7 +4,7 @@ app.register(require('fastify-websocket'));
 
 const connections = new Set();
 
-app.get('/alarm', (request, reply) => {
+app.all('/alarm', (request, reply) => {
   console.log('alarm');
 
   for (const connection of connections) {
