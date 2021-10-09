@@ -8,6 +8,9 @@
     "fastify-websocket": "^4.0.0",
     "ws": "^8.2.3"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "type": "module",
   "devDependencies": {
     "prettier": "^2.4.1"
