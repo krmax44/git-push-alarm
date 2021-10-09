@@ -1,8 +1,6 @@
-import Fastify from 'fastify';
-import websocket from 'fastify-websocket';
-
+const Fastify = require('fastify');
 const app = Fastify();
-app.register(websocket);
+app.register(require('fastify-websocket'));
 
 const connections = new Set();
 
