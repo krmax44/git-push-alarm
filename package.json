@@ -1,0 +1,19 @@
+{
+  "name": "pull-alarm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.22.0",
+    "fastify-websocket": "^4.0.0",
+    "ws": "^8.2.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  }
+}
