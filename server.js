@@ -19,9 +19,10 @@ app.get('/alarm', (request, reply) => {
 app.get('/socket', { websocket: true }, connection => {
   connections.add(connection);
 
-  connection.socket.on('message', message => {
+  connection.socket.on('message', () => {
     connection.socket.send('pong');
   });
+
   connection.on('close', () => connections.delete(connection));
 });
 
